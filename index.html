@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <script defer src="script.js"></script>
+    <title>Dark Kitchen</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#"><img src="./assets/img/logo.png" alt="Website logo" class="logo"></a>
+                <div class="links">
+                    <a href="#" class="link">About</a>
+                    <a href="#" class="link">Contact</a>
+                </div>
+            </nav>
+            <div class="mode-cart">
+                <a href="#" id="light-mode" style="display: none;">
+                    <img src="./assets/img/sun.png" alt="light mode" class="display-mode">
+                </a>
+                <a href="#" id="dark-mode" >
+                    <img src="./assets/img/moon.png" alt="dark mode" class="display-mode">
+                </a>
+                <a href="#" id="toggleButton">
+                    <img src="./assets/img/shopping-cart.png" alt="shopping-cart" class="shopping-cart">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <section class="title-page">
+                <h1>Taste Japan at home !</h1>
+            </section>
+
+            <section class="menu">
+                <div class="container menu-filter">
+                    <select name="menu-filter" id="menu-filter">
+                        <option value="all">Choose an option</option>
+                      </select>
+                </div>
+    
+                <div class="container">
+                    <ul class="menu-list">
+                        <li class="noodles">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/noodles_1.png" alt="noodles">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Noodles</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">15.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="sushi">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/sushi_1.png" alt="sushi">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>sushi</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">12.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="ramen">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/ramen_1.png" alt="ramen">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Ramen</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">16.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="starter">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/starter_2.png" alt="starter">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Starter</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">7.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="noodles">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/noodles_2.png" alt="noodles">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Noodles</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">15.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="rice">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/rice_1.png" alt="rice">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Rice</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">15.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="starter">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/starter_1.png" alt="starter">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Starter</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">7.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="ramen">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/ramen_2.png" alt="ramen">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Ramen</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">16.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="sushi">
+                            <article class="menu-item">
+                                <div class="menu-item-elem menu-item-img">
+                                    <img src="./assets/img/sushi_2.png" alt="sushi">
+                                </div>
+                                <div class="menu-item-elem menu-item-info">
+                                    <h2>Sushi</h2>
+                                    <p class="ingredients">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <p class="price">12.99€</p>
+                                    <a href="#" class="button button-order">Add to cart</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="order">
+                <div class="container">
+                    <a href="#" class="button">Order now !</a>
+                </div>
+            </section>
+        </section>
+        
+        <section class="cart-projection" id="shoppingCartDiv">
+            <div class="ordered-dishes-list">
+                <h2>Your cart</h2>
+                <h3 class="cart-empty">Your cart is empty !</h3>    
+                
+            </div>
+
+            <div class="checkout">
+                <p>Total: <span class="total-amount">0</span>€</p>
+                <a href="#" class="button cart-button">Checkout</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Taste Japan at home !</p>
+        </div>
+    </footer>
+</body>
+</html>

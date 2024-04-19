@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FFFFEE;
+  color: white;
+}
+
+h1 {
+  font-family: "Sedan", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  background-color: hsl(50, 96%, 58%);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: hsl(50, 100%, 47%);
+  font-size: 18px;
+  padding: 9px 20px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  background-color: hsl(50, 96%, 58%);
+  justify-content: center;
+}
+header .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+header .container nav .logo {
+  width: auto;
+  height: 120px;
+}
+header .container nav .links {
+  display: flex;
+  gap: 30px;
+}
+header .container nav .links .link {
+  font-size: 24px;
+  font-weight: 700;
+  color: #da2f3b;
+}
+header .container .mode-cart {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+header .container .mode-cart .display-mode {
+  width: auto;
+  height: 50px;
+}
+header .container .mode-cart .shopping-cart {
+  width: auto;
+  height: 60px;
+}
+
+main {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+main .main-content {
+  width: 100%;
+}
+main .main-content .title-page {
+  text-align: center;
+  margin: 50px 0;
+}
+main .main-content .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .main-content .menu .container {
+  justify-content: space-around;
+}
+main .main-content .menu .container select {
+  font-size: 16px;
+  background-color: #ffffb5;
+  border-radius: 5px;
+}
+main .main-content .menu .container .menu-list {
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 45px;
+}
+main .main-content .menu .container .menu-list li {
+  padding: 20px;
+  background-color: #da2f3b;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px #303030;
+}
+main .main-content .menu .container .menu-list li .menu-item {
+  width: 340px;
+}
+main .main-content .menu .container .menu-list li .menu-item .menu-item-elem {
+  width: 300px;
+}
+main .main-content .menu .container .menu-list li .menu-item .menu-item-elem img {
+  width: inherit;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+main .main-content .menu .container .menu-list li .menu-item .menu-item-img {
+  width: 100%;
+  height: 100%;
+}
+main .main-content .menu .container .menu-list li .menu-item .menu-item-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+main .main-content .menu .container .menu-list li .menu-item .menu-item-info .ingredients {
+  margin: 5px 0;
+  text-align: center;
+}
+main .order .container {
+  justify-content: center;
+  margin: 50px auto;
+}
+main .order .container a {
+  font-size: 30px;
+  padding: 20px 30px;
+}
+main .none {
+  display: none;
+}
+main .cart-projection {
+  width: 500px;
+  background-color: #da2f3b;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 1px #303030;
+  padding: 20px;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+main .cart-projection .ordered-dishes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+main .cart-projection .ordered-dishes-list h2 {
+  font-weight: 600;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-img {
+  width: 120px;
+  height: 120px;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 15px;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-info-price-button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  margin-top: 10px;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-info-price-button .ordered-dish-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-info-price-button .ordered-dish-info h2 {
+  font-size: 20px;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-info-price-button .ordered-dish-info p {
+  font-size: 15px;
+  line-height: normal;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-info-price-button .ordered-dish-price-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-info-price-button .ordered-dish-price-button .price {
+  font-weight: 600;
+}
+main .cart-projection .ordered-dishes-list .ordered-dish .ordered-dish-info-price-button .ordered-dish-price-button .button-remove {
+  padding: 6px 11px;
+}
+main .checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .checkout p {
+  font-size: 20px;
+}
+main .checkout .cart-button {
+  font-size: 20px;
+}
+
+footer {
+  background-color: hsl(50, 96%, 58%);
+  color: black;
+  height: 50px;
+}
+footer .container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+footer .container p {
+  font-size: 20px;
+  font-family: "Sedan", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100px;
+  }
+  header .container nav {
+    gap: 20px;
+  }
+  header .container nav .logo {
+    width: 100px;
+    height: auto;
+  }
+  header .container nav .links {
+    gap: 10px;
+  }
+  header .container nav .links .link {
+    font-size: 16px;
+  }
+  header .container .mode-cart .display-mode,
+  header .container .mode-cart .shopping-cart {
+    height: 30px;
+  }
+  main {
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  main .cart-projection {
+    width: 300px;
+    margin: 50px auto 0 auto;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  main .container {
+    width: 100%;
+  }
+  main .main-content .menu .container .menu-list li .menu-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0px;
+  }
+  header .container {
+    max-width: 100%;
+  }
+  main .cart-projection {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  main {
+    gap: 0px;
+  }
+  main .main-content .menu .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
