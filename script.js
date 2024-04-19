@@ -134,9 +134,12 @@ addCartButtons.forEach((button) => {
       let price = orderedDish.querySelector(".price").innerHTML;
       totalAmount -= parseFloat(price.replace(/\€$/, ""));
       totalAmount = totalAmount.toFixed(2);
+      if (totalAmount <= 0 || totalAmount == NaN)
+            totalAmount = 0;
       totalAmountDiv.textContent = `${totalAmount}`;
       orderedDish.remove();
       // TODO fix bug when many remove
+      
     });
   });
 });
